@@ -1,9 +1,3 @@
-- 행렬 기초
-    - 행렬 정의와 종류
-    - 행렬 덧셈과 곱셈
-    - 전치 행렬과 대칭 행렬
-    - 행렬식과 역행렬
-
 # 1. 행렬(matrix)
 
 ## 1. 행렬 정의
@@ -240,4 +234,24 @@
     
     $$
     T = \begin{pmatrix}t_0 & t_{-1} & t_{-2} & \cdots & \cdots & t_{-(n-1)} \\ t_1 & t_0 & t_{-1} & \ddots & \ddots & \vdots \\ t_2 & t_1 & t_0 & \ddots & \ddots & \vdots \\ \vdots & \ddots & \ddots & \ddots & t_{-1} & t_{-2} \\ \vdots & \ddots & \ddots & t_1 & t_0 & t_{-1} \\ t_{n-1} & t_{n-2} & \cdots & t_2 & t_1 & t_0 \end{pmatrix} \\ T_{i, j} = T_{i+1, j+1} = t_{i-j}
+    $$
+    
+
+# 9. 이중 대각 행렬(bidiagonal matrix)
+
+## 1. 이중 대각 행렬 정의
+
+- 대각 원소뿐만 아니라 대각 원소의 바로 위쪽 혹은 아래쪽 원소가 0이 아닌 행렬
+- upper bidiagonal matrix : 대각 원소 위쪽에 위치한 원소가 0이 아닌 이중 대각 행렬
+- lower bidiagonal matrix : 대각 원소 아래쪽에 위치한 원소가 0이 아닌 이중 대각 행렬
+
+# 10. 하우스홀더 행렬(householder matrix)
+
+## 1. 하우스홀더 행렬 정의
+
+- 어떤 행렬을 다른 형태로 변환할 때 사용하는 행렬 중 하나
+- 정사각 행렬이며 모든 열이 정규 직교인 행렬
+    
+    $$
+    v = \begin{pmatrix}v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \\ H = I - 2 \frac{vv^T}{v^Tv}
     $$
