@@ -93,3 +93,34 @@
     $$
     a \cdot b = |a| \ |b| \cos \theta
     $$
+    
+
+# 4. 외적과 크로네커 곱
+
+## 1. 벡터 외적
+
+- 외적(outer product), 텐서 곱(tensor product)
+- 벡터 외적 결과 → 행렬
+    
+    $$
+    u = \begin{pmatrix} u_1 \\ u_2 \\ u_3 \end{pmatrix}, \quad v = \begin{pmatrix} v_1 \\ v_2 \\ v_3 \\ v_4 \end{pmatrix} \\ u \otimes v = uv^T = \begin{pmatrix} u_1 \\ u_2 \\ u_3 \end{pmatrix} \begin{pmatrix} v_1 & v_2 & v_3 & v_4 \end{pmatrix} = \begin{pmatrix} u_1v_1 & u_1v_2 & \cdots & u_1v_m \\ u_2v_1 & u_2v_2 & \cdots & u_2v_m \\ \vdots & \vdots & \ddots & \vdots \\ u_nv_1 & u_nv_2 & \cdots & u_nv_m \end{pmatrix}
+    $$
+    
+
+## 2. 크로네커 곱(Kronecker product)
+
+- 외적의 특별한 경우
+- 행렬 $n \times p$, 행렬 $m \times d$ → 크로네커 곱 행렬 $nm \times pd$
+    
+    $$
+    A = \begin{pmatrix} a_{11} & a_{12}  & \cdots & a_{1p} \\ a_{21} & a_{22}  & \cdots & a_{2p} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2}  & \cdots & a_{np} \end{pmatrix}, \quad B = \begin{pmatrix} b_{11} & b_{12}  & \cdots & b_{1d} \\ b_{21} & b_{22}  & \cdots & b_{2d} \\ \vdots & \vdots & \ddots & \vdots \\ b_{m1} & b_{m2}  & \cdots & b_{md} \end{pmatrix} \\ A \otimes B = \begin{pmatrix} a_{11}B & a_{12}B  & \cdots & a_{1p}B \\ a_{21}B & a_{22}B  & \cdots & a_{2p}B \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1}B & a_{n2}B  & \cdots & a_{np}B \end{pmatrix} \\ = \begin{pmatrix}a_{11}b_{11} & a_{11}b_{12} & \cdots & a_{11}b_{1d} & \cdots & \cdots & a_{1p}b_{11} & a_{1p}b_{12} & \cdots & a_{1p}b_{1d} \\ a_{11}b_{21} & a_{11}b_{22} & \cdots & a_{11}b_{2d} & \cdots & \cdots & a_{1p}b_{21} & a_{1p}b_{22} & \cdots & a_{1p}b_{1d} \\ \vdots & \vdots & \ddots & \vdots & \cdots & \cdots & \vdots & \vdots & \ddots & \vdots \\ a_{11}b_{m1} & a_{11}b_{m2} & \cdots & a_{11}b_{md} & \cdots & \cdots & a_{1p}b_{m1} & a_{1p}b_{m2} & \cdots & a_{1p}b_{md}  \\ \vdots & \vdots & \ddots & \vdots & \cdots & \cdots & \vdots & \vdots & \ddots & \vdots \\ \vdots & \vdots & \ddots & \vdots & \cdots & \cdots & \vdots & \vdots & \ddots & \vdots \\ a_{n1}b_{11} & a_{n1}b_{12} & \cdots & a_{n1}b_{1d} & \cdots & \cdots & a_{np}b_{11} & a_{np}b_{12} & \cdots & a_{np}b_{1d} \\ a_{n1}b_{21} & a_{n1}b_{22} & \cdots & a_{n1}b_{2d} & \cdots & \cdots & a_{np}b_{21} & a_{np}b_{22} & \cdots & a_{np}b_{2d} \\ \vdots & \vdots & \ddots & \vdots & \cdots & \cdots & \vdots & \vdots & \ddots & \vdots \\ a_{n1}b_{m1} & a_{n1}b_{m2} & \cdots & a_{n1}b_{m1} & \cdots & \cdots & a_{np}b_{m1} & a_{np}b_{m1} & \cdots & a_{np}b_{md} \end{pmatrix}
+    $$
+    
+
+# 5. 벡터 곱
+
+## 1. 벡터 곱 정의
+
+- 벡터 곱(vector product), 크로스 곱(cross product)
+- 3차원 공간의 벡터들 간에 적용할 수 있는 연산
+- 단위 벡터를 사용해 벡터와 벡터의 곱 표현 가능
