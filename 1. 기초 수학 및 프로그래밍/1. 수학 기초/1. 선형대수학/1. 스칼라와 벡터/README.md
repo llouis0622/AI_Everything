@@ -124,3 +124,38 @@
 - 벡터 곱(vector product), 크로스 곱(cross product)
 - 3차원 공간의 벡터들 간에 적용할 수 있는 연산
 - 단위 벡터를 사용해 벡터와 벡터의 곱 표현 가능
+    
+    $$
+    i = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \quad j = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \quad k = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \\ u = \begin{pmatrix} u_1 \\ u_2 \\ u_3 \end{pmatrix}, \quad v = \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix} \\ \begin{aligned} u \times v &= \begin{vmatrix} i & j & k \\ u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3 \end{vmatrix} \\ &= \begin{vmatrix} u_2 & u_3 \\ v_2 & v_3\end{vmatrix}i - \begin{vmatrix} u_1 & u_3 \\ v_1 & v_3\end{vmatrix}j + \begin{vmatrix} u_1 & u_2 \\ v_1 & v_2\end{vmatrix}k  \\ &= (u_2v_3 - u_3v_2)i - (u_1v_3 - u_3v_1)j + (u_1v_2 - u_2v_1)k \end{aligned}
+    $$
+    
+
+## 2. 벡터 곱의 기하학적 의미
+
+- 벡터 곱 → 두 벡터에 전부 수직인 벡터
+- 두 벡터가 평행 → 벡터 곱 크기 0
+    
+    $$
+    ||u \times v|| = ||u|| \ ||v|| \ |\sin \theta|
+    $$
+    
+
+# 6. 삼중 곱
+
+## 1. 스칼라 삼중 곱
+
+- 두 벡터에 벡터 곱을 한 이후 남은 벡터와 내적하는 것
+- 세 백터를 행 벡터 또는 열 벡터로 갖는 행렬식
+    
+    $$
+    u = \begin{pmatrix} u_1 \\ u_2 \\ u_3 \end{pmatrix}, \quad v = \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix}, \quad w = \begin{pmatrix} w_1 \\ w_2 \\ w_3 \end{pmatrix} \\ u \cdot (v \times w) \\ u \cdot (v \times w) = \begin{vmatrix} u_1 & u_2 & u_3 \\ v_1 & v_2 & v_3 \\ w_1 & w_2 & w_3 \end{vmatrix}
+    $$
+    
+
+## 2. 벡터 삼중 곱
+
+- 벡터 간 연산을 모두 벡터 곱으로 수행
+    
+    $$
+    u \times (v \times w)
+    $$
